@@ -12,7 +12,9 @@
  */
 // 1. 连接数据库
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/guigu_zhipin')
+// mongoose.connect('mongodb://localhost:27017/guigu_zhipin')
+// 谷歌账号地址
+mongoose.connect('mongodb+srv://qqlcx5:794159441.@cluster0-xwqys.gcp.mongodb.net/test?retryWrites=true&w=majority')
 const conn = mongoose.connection
 conn.on('connected', function () {
   console.log('数据库连接成功!')
